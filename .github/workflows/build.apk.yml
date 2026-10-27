@@ -1,4 +1,3 @@
-
 name: Build Android APK
 
 on:
@@ -26,6 +25,6 @@ jobs:
 
       - name: Build APK with EAS
         working-directory: ./apps/mobile
-        run: npx eas-cli build --platform android --profile preview --non-interactive
+        run: eas build --platform android --profile preview --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
