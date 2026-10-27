@@ -1,3 +1,4 @@
+
 name: Build Android APK
 
 on:
@@ -16,15 +17,15 @@ jobs:
         with:
           node-version: 18
 
-      - name: Setup Expo
-        uses: expo/expo-github-action@v8
-        with:
-          expo-version: latest
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
 
-      - name: Install dependencies
+      - name: Navigate to Mobile App & Install Dependencies
+        working-directory: ./apps/mobile
         run: npm install
 
       - name: Build APK with EAS
+        working-directory: ./apps/mobile
         run: npx eas-cli build --platform android --profile preview --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
