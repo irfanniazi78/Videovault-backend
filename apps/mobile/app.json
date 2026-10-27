@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "VideoVault",
+    "slug": "videovault",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "videovault",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.videovault.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-sharing",
+      "expo-media-library"
+    ],
+    "extra": {
+      "apiUrl": "http://10.0.2.2:3000",
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "6f37bc2f-1793-43a0-b1f8-14fd76225733"
+      }
+    }
+  }
+}
