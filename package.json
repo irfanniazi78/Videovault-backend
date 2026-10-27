@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+ HEAD
   "name": "mobile",
   "version": "1.0.0",
   "main": "expo-router/entry",
@@ -29,7 +29,7 @@
     "web": "expo start --web"
   },
   "private": true
-=======
+
   "name": "videovault",
   "version": "0.1.0",
   "description": "Privacy-friendly, mobile-first video downloading powered by legitimate media sources.",
@@ -64,5 +64,5 @@
     "typescript": "^5.6.3",
     "vitest": "^2.1.8"
   }
->>>>>>> 8deb2729008ae89c6285d664625eb5134a16c273
+8deb2729008ae89c6285d664625eb5134a16c273
 }
